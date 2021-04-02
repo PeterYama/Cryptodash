@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css';
 import Welcome from './welcome'
 import styled, {css} from 'styled-components'
+import AppLayout from './AppLayout'
 
 //Simple component create with styled components
 const MyButtons = styled.div`
@@ -18,12 +19,14 @@ const TomatoButton = styled(MyButtons)`
 
 function App() {
   return (
-    <div className="App">
-      <Welcome name={"Peter"}/>
-      <MyButtons> Hello </MyButtons>
-      <MyButtons primary> Hello </MyButtons>
-      <TomatoButton>Tomato</TomatoButton>
-    </div>
+    <AppLayout>
+      <div className="App">
+        <Welcome name={"Peter"}/>
+        <MyButtons> Hello </MyButtons>
+        <MyButtons primary> Hello </MyButtons>
+        <TomatoButton>Tomato</TomatoButton>
+      </div>
+    </AppLayout>
   );
 }
 
