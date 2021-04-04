@@ -1,10 +1,12 @@
 import React from 'react'
 import styled, {css} from 'styled-components'
+// AppContext can be consumed by inner components
 import {AppContext} from './AppProvider'
 
-const Logo = styled.div`
-    font-size:1.5em;
-`
+// const Logo = styled.div`
+//     font-size:1.5em;
+// `
+
 const Bar = styled.div`
    display:grid;
    margin-bottom: 40px;
@@ -35,7 +37,7 @@ function ControlButton({name}){
     )
 }
 
-export default function () {
+export default function dashboard() {
     return <Bar>
         <div>CryptoDash</div>
         <div/>
