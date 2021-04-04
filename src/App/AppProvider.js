@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 const cc = require('cryptocompare')
+cc.setApiKey('73be884d840dcda06ffa9b785a3bb92c3554bac2be941fc2c6b1567b08444c82')
 // Create context
 // Providers will notify consumers when the states updates
 // App Context imports AppContext
