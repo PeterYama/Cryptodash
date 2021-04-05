@@ -12,7 +12,7 @@ export default class AppProvider extends Component {
     constructor(props){
         super(props);
         this.state={
-            page:'dashboard',
+            page:'Dashboard',
             firstVisit: false,
             ...this.savedSettings(),
             coinList:{},
@@ -28,13 +28,13 @@ export default class AppProvider extends Component {
     fetchCoins = async () => {
         let coinsList = (await cc.coinList()).Data;
         this.setState({coinList:coinsList});
-        console.log(this.state.coinList);
     }
+
     // to uset this.properties you must use arrow functions
     confirmFavorites = () => {
         this.setState({
             firstVisit: false,
-            page: 'dashboard'
+            page: 'Dashboard'
         });
 
         localStorage.setItem('cryptoDash', JSON.stringify({

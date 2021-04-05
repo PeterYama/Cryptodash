@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
-import Welcome from './settings'
+import Welcome from '../Settings/welcome'
 import AppLayout from './AppLayout'
 import AppBar from './AppBar'
 // Wrap the main component with AppProvider so Inner components can use Consume the context
 import AppProvider from './AppProvider'
-import Content from './settings/Shared/Content'
+import Content from '../Shared/Content'
 
 function App() {
   return (

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 // import AppContext from "../App/AppContext"
-import { AppContext } from '../AppProvider'
-import {fontSize1, greenBoxShadow, color3} from './Shared/Styles'
+import { AppContext } from '../App/AppProvider'
+import {fontSize1, greenBoxShadow, color3} from '../Shared/Styles'
 
 const ConfirmButtonStyled = styled.div`
     margin: 20px;

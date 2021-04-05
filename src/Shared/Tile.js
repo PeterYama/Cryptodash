@@ -1,4 +1,4 @@
-import {subtleBoxShadow, lightBlueBackground} from '../Shared/Styles'
+import {subtleBoxShadow, lightBlueBackground} from './Styles'
 import styled from 'styled-components'
 
 export const Tile = styled.div`
